@@ -1,0 +1,9 @@
+.flexview{
+    display: flex;
+    justify-content: space-between;
+     
+}
+
+.flex-item {
+    border: 10rem;
+}

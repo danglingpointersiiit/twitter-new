@@ -6,13 +6,10 @@ import IconButton from 'material-ui/IconButton';
 const style={
     height: 105,
     width: 250,
-    margin: 20,
     textAlign: 'center',
     display: 'inline-block',
-    float:'right',
-    marginTop:300,
-    marginLeft: '890px',
-    position:'absolute'
+    position:'absolute',
+   // marginLeft:-260
 }
 
 const textStyle={
@@ -26,9 +23,9 @@ const Footer = () => (
 
         <Paper style={style} zDepth={1} >
         <p style={textStyle}>
-        © 2017 Twitter <a>About</a> <a>Help Center</a> 
-        <a>Terms</a> <a>Privacy policy</a> <a>Cookies</a> <a>Ads info</a> 
-        <a>Brand</a> <a>Blog</a> <a>Status</a> <a>Apps</a> <a>Jobs</a> 
+        © 2017 Twitter <a>About</a> <a>Help Center</a> <br />
+            <a>Terms</a> <a>Privacy policy</a> <a>Cookies</a> <a>Ads info</a><br />
+        <a>Brand</a> <a>Blog</a> <a>Status</a> <a>Apps</a> <a>Jobs</a> &nbsp;
         <a>Marketing</a> <a>Businesses</a> <a>Developers</a> 
         </p>
         
