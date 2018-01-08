@@ -23,7 +23,7 @@ const style= {
     position:'fixed',
     width:'100%',
     zIndex: 20
-  
+
 }
 
 const button={
@@ -34,8 +34,8 @@ const button={
     backgroundColor: '#4ab3f4',
     color: 'white',
     position: 'absolute',
-    marginLeft: 230,
-  
+    marginLeft: 270,
+    marginTop: -40,
     height:28,
     width:60,
     fontSize:'11px',
@@ -47,7 +47,7 @@ const imgStyle={
     width:20,
     height:20,
     position: 'absolute',
-    
+
 }
 
 const hintStyle={
@@ -87,7 +87,7 @@ const imgStyle1 = {
 
 const avatar={
     borderRadius: '50%',
-     width: 26, 
+     width: 26,
      height: 26,
     display: 'flex',
     justifyContent: 'center',
@@ -122,8 +122,8 @@ export default class Navbar extends React.Component {
                             fontWeight: 'bold'
                         }}><a className="changeColor">Home</a>
                         </span>
-                        
-                        <IconButton iconStyle={{ height: 35, width: 40 }} style={{ position: 'absolute', marginLeft: 351, width: 20 }} 
+
+                        <IconButton iconStyle={{ height: 35, width: 40 }} style={{ position: 'absolute', marginLeft: 351, width: 20 }}
                             backgroundColor='#66757f' >
                             <Notifications hoverColor={'#1da1f2'} color={'#66757f'} />
                         </IconButton>
@@ -154,52 +154,47 @@ export default class Navbar extends React.Component {
                             fontWeight: 'bold'
                         }}><a className="changeColor">Messages</a>
                     </span>*/}
-                    
-                        <div style={{ position: 'absolute' }}>
-                    <Tabs 
-                            inkBarStyle={{ backgroundColor: '#1da1f2', width: 120}} 
+
+                        <div>
+                    <Tabs
+                            inkBarStyle={{ backgroundColor: '#1da1f2', width: 120}}
                             initialSelectedIndex={1}
-                           
+
                             >
-                            <Tab disabled={true} style={{ backgroundColor: 'white', width: 120 }}  />
+                            <Tab disabled={true} style={{ backgroundColor: 'white', width: 30 }}  />
                             <Tab icon={<FlatButton hoverColor={'white'}
-                                label="Home" labelStyle={{color: '#1da1f2', fontWeight: 900 }}
+                                label="Home" labelStyle={{color: '#1da1f2', fontWeight: 900 , fontSize : '50%'}}
                                 icon={<i style={{ color: '#1da1f2' }} class="material-icons">home</i>} />}
-                                style={{ backgroundColor:'white',width: 120} } />
+                                style={{ backgroundColor:'white',width: 90} } />
                             <Tab icon={<FlatButton hoverColor={'white'}
-                                label="Moments" labelStyle={{ color: '#66757f', fontWeight: 900 }}
+                                label="Moments" labelStyle={{ color: '#66757f', fontWeight: 900 , fontSize : '50%'}}
                                 icon={<i style={{ color: '#66757f' }} class="material-icons">flash_on</i>} />}
-                                style={{ backgroundColor: 'white', width: 150 }} />
+                                style={{ backgroundColor: 'white', width: 120 }} />
                             <Tab icon={<FlatButton hoverColor={'white'}
-                                label="Notifications" labelStyle={{ color: '#66757f', fontWeight: 900 }}
+                                label="Notifications" labelStyle={{ color: '#66757f', fontWeight: 900 , fontSize : '50%'}}
                                 icon={<i style={{ color: '#66757f' }} class="material-icons">notifications_none</i>} />}
-                                style={{ backgroundColor: 'white', width: 150 }} />
+                                style={{ backgroundColor: 'white', width: 130 }} />
                             <Tab icon={<FlatButton hoverColor={'white'}
-                                label="Messages" labelStyle={{ color: '#66757f', fontWeight: 900 }}
+                                label="Messages" labelStyle={{ color: '#66757f', fontWeight: 900 , fontSize : '50%'}}
                                 icon={<i style={{ color: '#66757f' }} class="material-icons">mail_outline</i>} />}
-                                style={{ backgroundColor: 'white', width: 160 }} />
+                                style={{ backgroundColor: 'white', width: 140 }} />
                                 <Tab disabled={true} style={{ backgroundColor: 'white', width: 160 }} />
 
                                 <Tab disabled={true} style={{ backgroundColor: 'white', width: 90 }} />
-                                <Tab disabled={true} icon={<img height="20" width="20" src={"./twitter.png"} />} 
-                                    style={{ backgroundColor: 'white', position : 'absolute' , marginLeft : '900px'}}/>
+                                <Tab disabled={true} icon={<img height="20" width="20" src={"./twitter.png"} />}
+                                    style={{ backgroundColor: 'white', position : 'absolute' , marginLeft : '80%'}}/>
 
                         </Tabs>
                         </div>
                 </ToolbarGroup>
-                <ToolbarGroup >
-                <div>       
-                 
-                </div>
-                </ToolbarGroup>
                 <ToolbarGroup>
-                        
-                       
+
+
                             {/*<img src="./mypic.jpg" style={avatar} alt="Avatar" />*/}
-                    
-                        <div style={{ position: 'absolute', marginLeft: '-400px' , zIndex: 22 }}>
+
+                        <div style={{position:'absolute' , marginLeft:-400 }}>
+                            <Search />
                             <button style={button}>Tweet</button>
-                            <Search  />
                             </div>
 
                 </ToolbarGroup>
